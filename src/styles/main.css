@@ -3,9 +3,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #fc1e8a; /*just color pickerm, css gradient io */
-    user-select: none; /* Impede o usuário de selecionar o texto */
-
+    background: #498fd4; 
+    user-select: none; 
 }
 
 .container{
@@ -17,17 +16,17 @@ body{
     gap: 30px;
     background: linear-gradient(
         325deg,
-        #03001e 0%,
-        #7303c0 30%,
-        #ec38bc 70%,
-        #fdeff9 100%
+        #213574 0%, 
+        #01348b 30%, 
+        #034078 70%, 
+        #a7d3f2 100% 
     );
     padding: 40px 60px;
 }
 
 h2{
     font-size: 3rem;
-    color: #fff;
+    color: #e0f2f7; 
     text-transform: uppercase;
     letter-spacing: 0.1rem;
 }
@@ -36,28 +35,29 @@ h2{
     padding: 15px 20px;
     width: 100%;
     color: #000;
-    background-color: #fff;
+    background-color: #e0f2f7; 
     border: none;
     font-size: 1.5em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 600;
+    border-radius: 15px;
 }
 
 .reset:focus{
-    color: #ec38bc;
-    background-color: #262809;
+    color: #a7d3f2; 
+    background-color: #0a1128; 
 }
 
 .game{
     width: 480px;
     height: 480px;
     display: flex;
-    flex-wrap: wrap; /* Para ele funcionar eu preciso do display flex */
-    gap: 16px; /* Espaçamento entre os cards */
+    flex-wrap: wrap;
+    gap: 16px;
     transform-style: preserve-3d;
-    perspective: 500px; /* Distância da câmera para o objeto */
+    perspective: 500px;
 }
 
 .item{
@@ -67,8 +67,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
-
+    background-color: #e0f2f7; 
     font-size: 3em;
     transform: rotateY(180deg);
     transition: 0.25s;
@@ -78,8 +77,7 @@ h2{
     content: "";
     position: absolute;
     inset: 0;
-    background: #404040;
-    /*opacity: 0.85;*/
+    background: #0d2840; 
     transition: 0.25s;
     transform: rotateY(0deg);
     backface-visibility: hidden;
